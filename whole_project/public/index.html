@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="general_css.css">
+   
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+</head>
+<body>
+  <nav id="header" class="header">
+    <div class="menu" onclick="toggle_menu()">
+      <i class="hgi hgi-stroke hgi-menu-square"></i>
+    </div>
+    <ul class="n-a-li"> 
+      
+       <li>logo</li>
+       <li class="search-container"> <input type="text"  name=""  placeholder="search" id="search-bar" class="search-bar"> 
+            <select style="padding:-1em 1em 1em -1em;" id="filter-for-sb">
+              <option id="fi-fo-sb-op " value="">S1</option>
+              <option id="fi-fo-sb-op " value="">S2</option>
+              <option id="fi-fo-sb-op " value="">S3</option>
+              <option id="fi-fo-sb-op " value="">S4</option>
+              
+            </select>
+            <button id="search-btn"  class="search-btn"><i class="hgi hgi-stroke hgi-search-01"></i></button>
+       </li>
+       <ul class="n-a-li-ul">
+         <li class="location-icon"> <i class="hgi hgi-stroke hgi-location-02"></i></li>
+         <li class="notification"><i class="hgi hgi-stroke hgi-notification-03"></i> </li> 
+          <li class="shopping_cart"><i class="hgi hgi-stroke hgi-shopping-basket-01"></i></li>
+       </ul>
+    </ul>
+</nav> 
+  <section id="main-body" class="main-body">
+   <nav id="dashboard" class="dashboard">
+    
+    <aside>
+      <div class="d-in-a">
+        <p class="categories">Trending</p>
+        <button class="c-btn">best seller</button>
+      </div>
+      
+      <div class="d-in-a">
+        <p class="categories">Shop by Dept</p>
+          <a class="c-btn" >electronics</a>
+          <a class="c-btn" >home</a>
+          <a class="c-btn" >Toys</a>
+      </div>
+        <div class="d-in-a">
+          <p class="categories" for="">see all</p>
+            <a class="c-btn">more</a>
+            <a class="c-btn">more</a>
+            <a class="c-btn">more</a>
+        </div>
+      <div>
+        <p class="categories">Help & Settings</p>
+          <a  id="pr_set" onclick="loadPage()" class="c-btn"><i class="hgi hgi-stroke hgi-settings-01">profile & setting</i></a> <!--onclick gets pages-->
+          <a class="c-btn">subscriptions</a>
+         s
+      </div>
+      <div></div>
+    </aside>
+   </nav>      
+
+  
+
+    <section class="body">
+      <div class="b-f-s">
+        <button  class="btn_b" id="s_prev"> <i class="hgi hgi-stroke hgi-arrow-left-01"></i></button>
+        <ul class="filter-search">
+        <li class="f_items">categories2</li>
+        <li class="f_items">categories3</li>
+        <li class="f_items">categories4</li>
+        <li class="f_items">categories5</li>
+        <li class="f_items">categories6</li>
+        <li class="f_items">categories7</li>
+        <li class="f_items">categories8</li>
+        <li class="f_items">categories9</li>
+        <li class="f_items">categories2</li>
+        <li class="f_items">categories3</li>
+        <li class="f_items">categories4</li>
+        <li class="f_items">categories5</li>
+        <li class="f_items">categories6</li>
+        <li class="f_items">categories7</li>
+        <li class="f_items">categories8</li>
+        <li class="f_items">categories9</li>
+        </ul>
+        <button class="btn_b" id="s_next"><i class="hgi hgi-stroke hgi-arrow-right-01"></i></button>
+      </div>
+      <div id="page" class="page"> 
+
+      </div>
+
+      
+      <div class="b_cat">
+        <!--header of categories-->
+        <div class="b_cat_h"><p>categories</p><a class="see_all" href="categori as a page">see all</a></div>
+        <!--body of categories -->
+        <div class="b_cat_b">
+           <button  class="btn_b" id="s_prev"><i class="hgi hgi-stroke hgi-arrow-left-01"></i></button>
+             <div class="c-l-i">
+              <!--categories list items-->
+                <div class="products">
+                  <img class="p-img" src="https://f.media-amazon.com/images/I/618yl7xamoL._AC_SY450_.jpg" alt="pic here">
+                  <!--product details-->
+                  <div class="p-det">
+                    <div class="p-info">
+                      <p>name</p>
+                      <i id="p-ellipsis" onclick="ellipse()" class="hgi hgi-stroke hgi-more-vertical-circle-02" ></i>
+                       <div id="p-tooltip" class="p-tooltip">
+                         <p class="option">source</p>
+                         <p class="option">share</p>
+                         <p class="option">add to chart</p>
+                       </div>
+                      
+                    </div>
+                    <div class="p-info">
+                      <p class="p-desc">desc(stock number)</p>
+                      <p class="p-brand">brand</p>
+                    </div>
+                    <div class="p-info">
+                      <p class="p-price">price</p>
+                      <div class="p-rating">rating</div>
+                    </div>
+                    <div class="p-info p-info-b">
+                     <button class="p-b">buy now</button>
+                     <button class="p-b">preview</button>
+                    </div> 
+                  </div> 
+                </div>
+             </div>
+           <button class="btn_b" id="s_next"><i class="hgi hgi-stroke hgi-arrow-right-01"></i></button>
+        </div>
+      </div>
+      
+     <div id="c-l-i">
+
+     </div>
+      
+
+
+  </section>
+</section>
+    
+
+
+ <script src="general_js.js"></script>
+  <script src="url_converter.js"></script>
+
+ 
+ 
+
+</body>
+</html>
